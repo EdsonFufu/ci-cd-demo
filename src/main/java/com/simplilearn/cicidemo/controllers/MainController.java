@@ -13,6 +13,7 @@ public class MainController {
     public ModelAndView index(){
         ModelAndView modelAndView = new ModelAndView("index.html");
         modelAndView.addObject("message","Welcome CI/CD Demo");
+        modelAndView.addObject("content","<h1 class'primary text-center'>Change Has been done</h1>");
         modelAndView.addObject("title","CI/CD Demo");
         return modelAndView;
     }
